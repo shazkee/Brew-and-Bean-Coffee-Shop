@@ -1,0 +1,58 @@
+<section id="contact" class="contact-section">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow">Contact us</p>
+      <h2>Visit Our Coffee Shop</h2>
+      <p>We’d love to hear from you. Stop by for a cup, or send a note and we’ll get back to you.</p>
+
+      <ul class="contact-list">
+        <li>
+          <span class="contact-icon" aria-hidden="true">⌂</span>
+          <div>
+            <strong>Location</strong>
+            <p>123 Coffee Street, Minglanilla, Cebu</p>
+          </div>
+        </li>
+        <li>
+          <span class="contact-icon" aria-hidden="true">☎</span>
+          <div>
+            <strong>Phone</strong>
+            <p><a href="tel:+639123456789">+63 912 345 6789</a></p>
+          </div>
+        </li>
+        <li>
+          <span class="contact-icon" aria-hidden="true">✉</span>
+          <div>
+            <strong>Email</strong>
+            <p><a href="mailto:hello@brewandbean.com">hello@brewandbean.com</a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <form class="contact-form" id="contact-form" novalidate>
+      <p class="form-demo-note">This form is a demo and does not send messages to a real server.</p>
+
+      <label>
+        Name
+        <input type="text" name="name" id="contact-name" autocomplete="name" required>
+        <span class="field-error" data-error-for="name"></span>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" id="contact-email" autocomplete="email" required>
+        <span class="field-error" data-error-for="email"></span>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" id="contact-message" rows="5" required></textarea>
+        <span class="field-error" data-error-for="message"></span>
+      </label>
+
+      <button type="submit" class="btn btn-dark">Send Message <span aria-hidden="true">→</span></button>
+      <p class="form-success" id="form-success" hidden role="status">Thank you. Your message was validated successfully. (Demo only — nothing was sent.)</p>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,129 @@
+.contact-section {
+  background: #fbf7f1;
+  padding: 96px 0 100px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.contact-info h2 {
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  margin-bottom: 14px;
+}
+
+.contact-info > p {
+  color: var(--text-muted);
+  max-width: 42ch;
+}
+
+.contact-list {
+  margin-top: 32px;
+  display: grid;
+  gap: 22px;
+}
+
+.contact-list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--cream-deep);
+  color: var(--brown-soft);
+  flex-shrink: 0;
+}
+
+.contact-list strong {
+  display: block;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-list p,
+.contact-list a {
+  color: var(--text-muted);
+}
+
+.contact-form {
+  background: var(--white);
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 16px;
+}
+
+.form-demo-note {
+  font-size: 0.82rem;
+  color: var(--brown-soft);
+  background: var(--cream);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid rgba(43, 28, 18, 0.12);
+  background: #fbf7f1;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  color: var(--text);
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--gold);
+  border-color: transparent;
+}
+
+.contact-form .btn {
+  justify-self: start;
+  margin-top: 6px;
+}
+
+.field-error {
+  min-height: 1em;
+  color: #9b2c1a;
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+
+.form-success {
+  color: #2f6b3a;
+  background: #e8f3ea;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+}
+
+.contact-form.is-invalid input:invalid,
+.contact-form.is-invalid textarea:invalid {
+  border-color: #c45c4a;
+}
+
+@media (max-width: 860px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
